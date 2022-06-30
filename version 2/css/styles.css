@@ -7,7 +7,9 @@
 html {
   text-align: center;
   overflow-y: scroll;
-  background: linear-gradient(-90deg, black 20%, rgb(68, 68, 68) 60%, rgb(129, 129, 129));
+  background: linear-gradient(217deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70%),
+              linear-gradient(127deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70%),
+              linear-gradient(336deg, rgba(255,255,0,0.8), rgba(255,255,0,0) 70%);
   color:aliceblue;
   font-family: 'Small Pixel 7';
 }
@@ -35,24 +37,23 @@ a {
   font-size: 32px;
 }
 
+.banner-links a:link, a:visited {
+  color: black;
+}
+
+.banner-links a:active {
+  color: white;
+}
+
 .banner-links-text {
   padding: 5px;
-  background-color: lightblue;
+  /*background-color: lightblue;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px 3px gray;*/
 }
 
-.banner-links img {
-  box-shadow: 3px 3px 3px 3px gray;
-}
-
-.banner-links img:hover {
-  box-shadow: none;
-}
-
-.banner-links-text:hover {
-  box-shadow: none;
-  background-color: cornflowerblue;
+.banner-links img:active {
+  box-shadow: 0 0 5px 10px gray;
 }
 
 .banner-links li {
@@ -63,6 +64,7 @@ a {
 .banner-container {
   margin: 0px 0 10px;
   position: relative;
+  background-color: black;
 }
 
 .border-img {
@@ -107,7 +109,7 @@ a {
 }
 
 .leftside {
-  left: 0px;
+  left: -1px;
   top: 0px;
 }
 
@@ -149,31 +151,60 @@ a {
   margin: 0% 25% 0%;
 }
 
+.profile-title {
+  font-size: 60px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  background-color: black;
+  background-image: linear-gradient(150deg, green 15%, purple 66%, orangered);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  padding: 5px 15px;
+  color: rgba(0,0,0,0);
+}
+
+.bio {
+  margin: 40px 20% 60px;
+  text-align: left;
+  color: black;
+  display: flex;
+}
+
 .profile-pic {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 10px;
+  margin: 40px 30px 15px 15px;
 }
 
 .name {
-  font-weight: bold;
   font-family: 'Small Pixel 7';
   font-size: 26px;
 }
 
 .liam .name {
   color: green;
-  text-shadow: 2px 2px 2px lightgreen;
+}
+
+.liam .profile-pic {
+  border: 5px solid green;
 }
 
 .jen .name {
   color: purple;
-  text-shadow: 2px 2px 2px pink;
+}
+
+.jen .profile-pic {
+  border: 5px solid purple;
 }
 
 .matt .name {
   color: orangered;
-  text-shadow: 2px 2px 2px orange;
+}
+
+.matt .profile-pic {
+  border: 5px solid orangered;
 }
 
 .bio-para {
@@ -186,19 +217,39 @@ a {
   font-size: 16px;
 }
 
-.listgroups {
-  position: relative;
-  display: inline-block;
+.listgroups ul {
+  /*position: relative;
+  display: inline-block;*/
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .listgroups a {
   font-family: 'Small Pixel 7';
-  font-size: 18px;
-  background-color: lightblue;
+  font-size: 26px;
+  background: linear-gradient(150deg, darkgrey 41%, white);
   padding: 5px;
   margin: 5px;
-  line-height: 1.5em;
-  border-radius: 8px;
+  line-height: 2em;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px 2px black;
+}
+
+.listgroups a:link {
+  color: black;
+}
+
+.listgroups a:visited {
+  color: black;
+}
+
+.listgroups a:hover {
+  color: white;
+}
+
+.listgroups a:active {
+  box-shadow: 0 0 2px 2px black;
 }
 
 .version .banner-links li a {
@@ -212,4 +263,9 @@ a {
 
 .version .banner-links li a:visited {
   color:bisque;
+}
+
+video {
+  height: 500px;
+  width: auto;
 }
