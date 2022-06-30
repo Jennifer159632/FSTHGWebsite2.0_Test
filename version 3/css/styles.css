@@ -108,10 +108,12 @@ a {
 
 .leftside {
   left: 0px;
+  top: 0px;
 }
 
 .rightside {
   right: 0px;
+  top: 0px;
 }
 
 .top {
