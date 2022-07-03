@@ -7,13 +7,34 @@
 html {
   text-align: center;
   overflow-y: scroll;
-  background: linear-gradient(-90deg, black 20%, rgb(68, 68, 68) 60%, rgb(129, 129, 129));
-  color:aliceblue;
+  color:gray;
   font-family: 'Small Pixel 7';
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 body {
   margin: 0px;
+  background-color: #F6E3C5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4CACBC;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  min-height: 210px;
+}
+
+footer {
+  background-color: #4CACBC;
+  width: 100%;
 }
 
 a {
@@ -37,22 +58,18 @@ a {
 
 .banner-links-text {
   padding: 5px;
-  background-color: lightblue;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px gray;
 }
 
-.banner-links img {
-  box-shadow: 3px 3px 3px 3px gray;
+.banner-links-text:link {
+  color: green;
 }
 
-.banner-links img:hover {
-  box-shadow: none;
+.banner-links-text:visited {
+  color: green;
 }
 
 .banner-links-text:hover {
-  box-shadow: none;
-  background-color: cornflowerblue;
+  color: lightgreen
 }
 
 .banner-links li {
@@ -61,8 +78,10 @@ a {
 }
 
 .banner-container {
-  margin: 0px 20% 10px;
+  margin: 10px 30% 10px;
   position: relative;
+  background-color: black;
+  padding-bottom: 10px;
 }
 
 .border-img {
@@ -149,6 +168,21 @@ a {
   margin: 0% 25% 0%;
 }
 
+.bio {
+  display: inline-block;
+  margin: 10px 30%;
+  text-align: left;
+}
+
+.hr-bio {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightgrey;
+  border-width: 8px;
+  width: 9%;
+  margin: 50px auto;
+}
+
 .profile-pic {
   height: 200px;
   width: 200px;
@@ -189,16 +223,28 @@ a {
 .listgroups {
   position: relative;
   display: inline-block;
+  margin: 10px auto;
 }
 
 .listgroups a {
   font-family: 'Small Pixel 7';
-  font-size: 18px;
-  background-color: lightblue;
+  font-size: 26px;
   padding: 5px;
   margin: 5px;
   line-height: 1.5em;
   border-radius: 8px;
+}
+
+.listgroups a:link {
+  color: green;
+}
+
+.listgroups a:visited {
+  color: green;
+}
+
+.listgroups a:hover {
+  color: lightgreen;
 }
 
 .version .banner-links li a {
@@ -212,4 +258,13 @@ a {
 
 .version .banner-links li a:visited {
   color:bisque;
+}
+
+.version .banner-links li a:hover {
+  color: gold;
+}
+
+video {
+  max-height: 100%;
+  width: 100%;
 }
