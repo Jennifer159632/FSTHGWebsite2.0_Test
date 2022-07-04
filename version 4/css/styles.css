@@ -7,7 +7,7 @@
 html {
   text-align: center;
   overflow-y: scroll;
-  background: linear-gradient(-90deg, black 20%, rgb(68, 68, 68) 60%, rgb(129, 129, 129));
+  background: linear-gradient(-90deg, rgb(129, 129, 129) 20%, rgb(68, 68, 68) 50%, rgb(129, 129, 129));
   color:aliceblue;
   font-family: 'Small Pixel 7';
   position: relative;
@@ -23,12 +23,23 @@ header {
   padding-top: 30px;
 }
 
+.content {
+  margin: 20px 20%;
+}
+
 footer {
   padding-bottom: 30px;
+  background: linear-gradient(-90deg, rgb(36, 36, 36) 40%, rgb(48, 48, 48) 50%);
+  border-top: 5px rgba(10,101,120,255) solid;
 }
 
 a {
   text-decoration: none;
+}
+
+.banner {
+  border-top: 5px rgba(10,101,120,255) solid;
+  border-bottom: 5px rgba(10,101,120,255) solid;
 }
 
 .banner-menu {
@@ -48,13 +59,23 @@ a {
 
 .banner-links-text {
   padding: 5px;
-  background-color: lightblue;
+  background: linear-gradient(150deg, darkgrey 41%, white);
+  border: 2px rgba(10,101,120,255) solid;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 1px 1px 2px 2px rgb(54, 54, 54);
+}
+
+.banner-links-text:link {
+  color: rgba(10,101,120,255);
+}
+
+.banner-links-text:visited {
+  color: rgba(10,101,120,255);
 }
 
 .banner-links img {
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 1px 1px 2px 2px rgb(54, 54, 54);
+  border: 2px rgba(10,101,120,255) solid;
 }
 
 .banner-links img:hover {
@@ -156,39 +177,26 @@ a {
 }
 
 .introduction {
-  margin: 0% 25% 0%;
+  margin: 0% 15% 0%;
 }
 
 .profile-pic {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 25px;
+  border: 4px rgba(10,101,120,255) solid;
 }
 
 .name {
-  font-weight: bold;
   font-family: 'Small Pixel 7';
   font-size: 26px;
-}
-
-.liam .name {
-  color: green;
-  text-shadow: 2px 2px 2px lightgreen;
-}
-
-.jen .name {
-  color: purple;
-  text-shadow: 2px 2px 2px pink;
-}
-
-.matt .name {
-  color: orangered;
-  text-shadow: 2px 2px 2px orange;
+  text-shadow: 2px 2px 3px lightgrey;
 }
 
 .bio-para {
-  font-family: 'Small Pixel 7';
-  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin: 30 0;
 }
 
 .bio-para .bio-text {
@@ -204,11 +212,24 @@ a {
 .listgroups a {
   font-family: 'Small Pixel 7';
   font-size: 18px;
-  background-color: lightblue;
+  background: linear-gradient(150deg, darkgrey 41%, white);
   padding: 5px;
   margin: 5px;
-  line-height: 1.5em;
+  line-height: 1.8em;
   border-radius: 8px;
+  border: 2px rgba(10,101,120,255) solid;
+}
+
+.listgroups a:link {
+  color: rgba(10,101,120,255);
+}
+
+.listgroups a:visited {
+  color: rgba(10,101,120,255);
+}
+
+.listgroups a:hover {
+  background: linear-gradient(150deg, rgb(71, 142, 169) 41%, rgb(143, 161, 169))
 }
 
 .version .banner-links li a {
@@ -222,4 +243,12 @@ a {
 
 .version .banner-links li a:visited {
   color:bisque;
+}
+
+video {
+  height: 500px;
+  width: 100%;
+  margin: 30px 0;
+  border: 5px rgba(10,101,120,255) solid;
+  background: linear-gradient(-90deg, rgb(36, 36, 36) 40%, rgb(48, 48, 48) 50%);
 }
