@@ -7,8 +7,10 @@
 html {
   text-align: center;
   overflow-y: scroll;
-  background: linear-gradient(-90deg, black 20%, rgb(68, 68, 68) 60%, rgb(129, 129, 129));
-  color:aliceblue;
+  background: linear-gradient(71deg, rgba(68, 68, 68, 0.6), rgba(68, 68, 68, 0) 75%),
+              linear-gradient(178deg, rgba(21, 126, 222, 0.6), rgba(21, 126, 222, 0) 75%),
+              linear-gradient(268deg, rgba(24, 109, 112, 0.6), rgba(24 ,109, 112, 0) 75%);
+  color:rgba(10,101,120,255);
   font-family: 'Small Pixel 7';
   position: relative;
 }
@@ -21,8 +23,14 @@ header {
   padding: 30px;
 }
 
+.content {
+  min-height: 200px;
+}
+
 footer {
-  padding: 30px;
+  padding: 5px 30px 30px;
+  background: linear-gradient(90deg, rgb(70, 70, 70) 40%, rgb(120, 120, 120));
+  border-top: 5px rgba(10,101,120,255) solid;
 }
 
 a {
@@ -41,27 +49,38 @@ a {
 
 .banner-links a {
   font-family: 'Small Pixel 7';
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .banner-links-text {
+  color: rgb(95, 95, 95);
+  background: linear-gradient(160deg, lightblue 40%, silver);
   padding: 5px;
-  background-color: lightblue;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px gray;
+  margin: 5px;
+  line-height: 1.5em;
+  border: 2px black solid;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 2px gray;
 }
 
 .banner-links img {
   box-shadow: 3px 3px 3px 3px gray;
 }
 
-.banner-links img:hover {
+.banner-links img:active {
   box-shadow: none;
 }
 
-.banner-links-text:hover {
+.banner-links-text:link {
+  color:rgb(95, 95, 95);
+}
+
+.banner-links-text:visited {
+  color:rgb(95, 95, 95);
+}
+
+.banner-links-text:active {
   box-shadow: none;
-  background-color: cornflowerblue;
 }
 
 .banner-links li {
@@ -172,17 +191,17 @@ a {
 
 .liam .name {
   color: green;
-  text-shadow: 2px 2px 2px lightgreen;
+  text-shadow: 2px 2px 2px rgba(10,101,120,255);
 }
 
 .jen .name {
   color: purple;
-  text-shadow: 2px 2px 2px pink;
+  text-shadow: 2px 2px 2px rgba(10,101,120,255);
 }
 
 .matt .name {
   color: orangered;
-  text-shadow: 2px 2px 2px orange;
+  text-shadow: 2px 2px 2px rgba(10,101,120,255);
 }
 
 .bio-para {
@@ -202,12 +221,26 @@ a {
 
 .listgroups a {
   font-family: 'Small Pixel 7';
-  font-size: 18px;
-  background-color: lightblue;
+  font-size: 28px;
+  background: linear-gradient(160deg, lightblue 40%, silver);
   padding: 5px;
   margin: 5px;
   line-height: 1.5em;
-  border-radius: 8px;
+  border: 2px black solid;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.listgroups a:link {
+  color: rgb(95, 95, 95);
+}
+
+.listgroups a:visited {
+  color: rgb(95, 95, 95);
+}
+
+.listgroups a:active {
+  box-shadow: none;
 }
 
 .version .banner-links li a {
@@ -221,4 +254,9 @@ a {
 
 .version .banner-links li a:visited {
   color:bisque;
+}
+
+video {
+  height: 100%;
+  width: 100%;
 }
