@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'Proggy Small';
+  src: url('../fonts/ProggySmall.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('../fonts/ProggySmall.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+html {
+  text-align: center;
+  overflow-y: scroll;
+  background-color: #F6E3C5;
+  color:rgba(10,101,120,255);
+  font-family: 'Proggy Small';
+  font-size: 20px;
+  line-height: 1.1rem;
+  position: relative;
+  
+}
+
+body {
+  margin: 0px;
+  padding: 25px;
+  position: relative;
+}
+
+header {
+  padding-top: 30px;
+}
+
+.content {
+  margin: 20px 20%;
+}
+
+footer {
+  padding-bottom: 30px;
+  background-color: #4CACBC;
+  border-top: 5px rgba(10,101,120,255) solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 2px 2px 3px lightgrey;
+}
+
+article {
+  text-align: left;
+}
+
+.banner-menu {
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.banner-links {
+  margin: 0;
+  padding: 5px;
+}
+
+.banner-links a {
+  font-family: 'Proggy Small';
+  font-size: 32px;
+  color: black;
+}
+
+.banner-links-text {
+  padding: 5px;
+  background: linear-gradient(150deg, darkgrey 41%, white);
+  border: 2px rgba(10,101,120,255) solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgb(54, 54, 54);
+}
+
+.banner-links img {
+  box-shadow: 1px 1px 2px 2px rgb(54, 54, 54);
+  border: 2px rgba(10,101,120,255) solid;
+}
+
+.banner-links img:hover {
+  box-shadow: none;
+}
+
+.banner-links-text:hover {
+  box-shadow: none;
+  background-color: cornflowerblue;
+}
+
+.banner-links li {
+  vertical-align: middle;
+  margin: 0 10px 0;
+}
+
+.banner-container-border {
+  width: 100%;
+  background-color: #4CACBC;
+  border: 5px rgba(10,101,120,255) solid;
+}
+
+.banner-container {
+  margin: 0px 20% 0;
+  padding: 50px;
+  position: relative;
+}
+
+.banner {
+  border: 5px rgba(10,101,120,255) solid;
+}
+
+.border-img {
+  position: absolute;
+  z-index: 2;
+}
+
+.corner {
+  height: 75px;
+  width: auto;
+  z-index: 3;
+}
+
+.sides {
+  width: 50px;
+  height: 100%;
+}
+
+.top, .bottom {
+  height: 50px;
+  width: 100%;
+}
+
+.bottomleft {
+  left: 0px;
+  bottom: 0px;
+}
+
+.bottomright {
+  bottom: 0px;
+  right: 0px;
+}
+
+.topleft {
+  top: 0px;
+  left: 0px;
+}
+
+.topright {
+  top: 0px;
+  right: 0px;
+}
+
+.leftside {
+  left: 0px;
+  top: 0px;
+}
+
+.rightside {
+  right: 0px;
+  top: 0px;
+}
+
+.top {
+  top: 0px;
+  left: 0px;
+}
+
+.bottom {
+  bottom: 0px;
+  left: 0px;
+}
+
+.banner {
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+.banner-menu li{
+  display: inline;
+}
+
+.nobull {
+  list-style-type: none;
+}
+
+.introduction {
+  margin: 0% 15% 0%;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  border: 4px rgba(10,101,120,255) solid;
+}
+
+.name {
+  font-family: 'Proggy Small';
+  font-size: 32px;
+  text-shadow: 2px 2px 3px lightgrey;
+}
+
+.bio-para {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin: 30 0;
+}
+
+.bio-para .bio-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.listgroups {
+  position: relative;
+  display: inline-block;
+}
+
+.listgroups a {
+  font-family: 'Proggy Small';
+  font-size: 24px;
+  color: black;
+  background: linear-gradient(150deg, darkgrey 41%, white);
+  padding: 5px;
+  margin: 5px;
+  line-height: 1.8em;
+  border-radius: 8px;
+  border: 2px rgba(10,101,120,255) solid;
+}
+
+.listgroups a:hover {
+  background: linear-gradient(150deg, rgb(71, 142, 169) 41%, rgb(143, 161, 169))
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+.characters {
+  margin-top: 30px;
+}
+
+.char {
+  display: flex;
+  margin: 35px auto;
+}
+
+.char-pic-container {
+  min-width: 150px;
+}
+
+.char-pic {
+  height: 100px;
+  width: auto;
+  margin: 20% auto;
+  background-color: #4CACBC;
+  border: 2px rgba(10,101,120,255) solid;
+  border-radius: 8px;
+}
+
+.char-bio {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.char-bio h3 {
+  text-shadow: none;
+}
+
+.char-bio p {
+  font-size: 16px;
+}
