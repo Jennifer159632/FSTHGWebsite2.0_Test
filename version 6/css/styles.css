@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Proggy Small';
-  src: url('../fonts/ProggySmall.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-   url('../fonts/ProggySmall.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-family: 'Fixedsys Excelsior 300';
+  src: url('../fonts/FSEX300.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('../fonts/FSEX300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 html {
@@ -9,7 +9,7 @@ html {
   overflow-y: scroll;
   background-color: rgb(98.5, 98.5, 98.5);
   color:aliceblue;
-  font-family: 'Proggy Small';
+  font-family: 'Fixedsys Excelsior 300';
   font-size: 20px;
   line-height: 1.1rem;
   position: relative;
@@ -63,7 +63,7 @@ article {
 }
 
 .banner-links a {
-  font-family: 'Proggy Small';
+  font-family: 'Fixedsys Excelsior 300';
   font-size: 32px;
   color: black;
 }
@@ -203,20 +203,20 @@ article {
 }
 
 .name {
-  font-family: 'Proggy Small';
+  font-family: 'Fixedsys Excelsior 300';
   font-size: 32px;
   text-shadow: 2px 2px 3px lightgrey;
 }
 
 .bio-para {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
+  font-family: 'Fixedsys Excelsior 300';
+  font-size: 22px;
   margin: 30 0;
 }
 
 .bio-para .bio-text {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-family: 'Fixedsys Excelsior 300';
+  font-size: 18px;
 }
 
 .listgroups {
@@ -225,7 +225,7 @@ article {
 }
 
 .listgroups a {
-  font-family: 'Proggy Small';
+  font-family: 'Fixedsys Excelsior 300';
   font-size: 24px;
   color: black;
   background: linear-gradient(150deg, darkgrey 41%, white);
@@ -262,7 +262,7 @@ video {
 
 .char-bio {
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Fixedsys Excelsior 300';
 }
 
 .char-bio h3 {
@@ -270,5 +270,5 @@ video {
 }
 
 .char-bio p {
-  font-size: 16px;
+  font-size: 18px;
 }
