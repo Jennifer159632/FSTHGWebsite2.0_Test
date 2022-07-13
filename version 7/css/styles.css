@@ -52,12 +52,14 @@ article {
 
 .banner-menu {
   margin: 0px;
-  vertical-align: middle;
 }
 
 .banner-links {
   margin: 0;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-links a {
